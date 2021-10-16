@@ -1,0 +1,145 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+@import 'bulma/css/bulma.css';
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+html{
+  background-color: black;
+  font-family: 'Syne Mono';
+}
+body{
+  background-color: black;
+}
+
+p{
+  font-size: 24px;
+  font-family: 'Syne Mono';}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: 'Syne Mono';
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: 'Syne Mono';
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position:fixed;
+  
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+    font-family: 'Syne Mono';
+  }
+
+  blockquote p {
+    color: rgb(255, 255, 255);
+    
+    font-size: 2rem;
+    display: inline;
+    line-height: 1;
+    font-family: 'Syne Mono';
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+
+
+  .cum{
+    margin: 0;
+    padding: 0px 35px;
+    
+    background-size: cover;
+    position: flex;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    resize: none;
+  }
+#kutija{
+    position:relative;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#kutija::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#d0ff00,#ff0000);
+    animation: border 2s linear infinite;
+}
+
+#kutija::after{
+    content: '';
+    position: absolute;
+    background:rgb(28, 18, 31);
+    border-radius: 16px;
+    inset: 4px;
+}
+
+#kutija:hover{
+    opacity: 60%;
+}
+
+@keyframes border
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
