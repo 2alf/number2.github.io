@@ -46,27 +46,6 @@ const pyro4 = new THREE.Mesh(geometry4, material4);
 
 scene.add(pyro4);
 
-// ?
-const x = 0, y = 0;
-
-const heartShape = new THREE.Shape();
-
-heartShape.moveTo( x + 5, y + 5 );
-heartShape.bezierCurveTo( x + 1, y + 1, x + 2, y, x, y );
-heartShape.bezierCurveTo( x - 12, y, x - 6, y + 7,x - 6, y + 7 );
-heartShape.bezierCurveTo( x - 63, y + 11, x - 3, y + 15.4, x + 5, y + 19 );
-heartShape.bezierCurveTo( x + 67, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
-heartShape.bezierCurveTo( x + 20, y + 7, x + 16, y, x + 10, y );
-heartShape.bezierCurveTo( x + 30, y, x + 5, y + 3, x + 5, y + 5 );
-
-const geometrya = new THREE.ShapeGeometry( heartShape );
-const materiala = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const mesha = new THREE.Mesh( geometrya, materiala ) ;
-//scene.add( mesha );
-
-mesha.position.x=10;
-mesha.position.y=-10;
-mesha.position.z=5;
 // Lights
 
 const pointLight = new THREE.PointLight(0xffffff);
