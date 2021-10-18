@@ -46,7 +46,7 @@ const pyro4 = new THREE.Mesh(geometry4, material4);
 
 scene.add(pyro4);
 
-// Lights
+// lights
 
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(5, 5, 5);
@@ -55,12 +55,10 @@ const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
 
 
-
-// Background
+// bg
 const poz = new THREE.Color(0x00001)
 scene.background = poz;
 
-//renderer.setClearColor( 0xffffff );
 
 // cube
 
@@ -70,7 +68,7 @@ const fuck = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicM
 
 scene.add(fuck);
 
-//moretextures
+
 //positions
 
 const moonTexture = new THREE.TextureLoader().load('https://media0.giphy.com/media/YqhIK6Gbor6CLeloBq/giphy.gif?cid=790b7611629b874ca0fc525066c2e6dd1b0ed4bd29b2265e&rid=giphy.gif&ct=g');
@@ -113,7 +111,7 @@ pyro4.position.y=3;
 
 //loadGLTF()
 
-// Scroll Animation
+// scroll Animation
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
