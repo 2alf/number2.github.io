@@ -75,7 +75,7 @@ moon.position.setX(-1);
 
 pyro2.position.z=100;
 pyro2.position.x=-1;
-pyro2.position.y=-5;
+pyro2.position.y=-3;
 
 pyro3.position.z=30;
 pyro3.position.x=10;
