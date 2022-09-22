@@ -1,16 +1,11 @@
-//import './style.css';
 import * as THREE from "https://unpkg.com/three@0.127.0/build/three.module.js";
-//import { GLTFLoader } from 'https://unpkg.com/three/examples/jsm/loaders/GLTFLoader.js';
-
 
 const scene = new THREE.Scene();
-
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
-
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
@@ -59,16 +54,6 @@ scene.add(pointLight, ambientLight);
 const poz = new THREE.Color(0x00001)
 scene.background = poz;
 
-
-// cube
-
-const fuckTexture = new THREE.TextureLoader().load('https://media0.giphy.com/media/YqhIK6Gbor6CLeloBq/giphy.gif?cid=790b7611629b874ca0fc525066c2e6dd1b0ed4bd29b2265e&rid=giphy.gif&ct=g');
-
-const fuck = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: fuckTexture, wireframe: true }));
-
-scene.add(fuck);
-
-
 //positions
 
 const moonTexture = new THREE.TextureLoader().load('https://media0.giphy.com/media/YqhIK6Gbor6CLeloBq/giphy.gif?cid=790b7611629b874ca0fc525066c2e6dd1b0ed4bd29b2265e&rid=giphy.gif&ct=g');
@@ -87,9 +72,6 @@ scene.add(moon);
 
 moon.position.z = 6;
 moon.position.setX(-1);
-
-fuck.position.z = -5;
-fuck.position.x = 2;
 
 pyro2.position.z=100;
 pyro2.position.x=-1;
