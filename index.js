@@ -122,7 +122,7 @@ function animate() {
   pyro.rotation.z += 0.01;
 
   pyro2.rotation.x += 0.01;
-  pyro2.rotation.y += 0.001;
+  pyro2.rotation.y += 0.01;
   pyro2.rotation.z += 0.001;
 
   pyro3.rotation.x += 0.01;
